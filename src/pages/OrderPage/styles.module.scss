@@ -1,0 +1,73 @@
+@use "../../styles/variables/color";
+
+.orderPage {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.header {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.listOrder {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  border: color.$borderProductItem 1px solid;
+}
+
+.description {
+  display: flex;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.counter {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.btnSubmit {
+  display: block;
+  margin: 0 auto;
+  background-color: color.$btnOkBg;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  color: color.$btnText;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnDelete {
+  background-color: color.$btnErrorBg;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  color: color.$btnText;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}

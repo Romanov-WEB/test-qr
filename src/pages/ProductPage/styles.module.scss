@@ -1,0 +1,44 @@
+@use "../../styles/variables/color";
+
+.wrapperPage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+}
+
+.cost {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.wrapperProduct {
+  width: calc(100% - 350px - 2px);
+  margin: 0 auto;
+}
+
+.wrapperOrder {
+  width: 350px;
+  height: calc(100vh - 120px);
+  border: color.$borderProductItem 1px solid;
+  background-color: color.$btnText;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.listProductWrapper {
+  overflow-y: auto;
+  height: calc(100vh - 120px - 95px);
+}
+
+.listProduct {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}

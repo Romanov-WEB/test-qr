@@ -1,0 +1,35 @@
+@use "../../styles/variables/color";
+
+.wrapperCard {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+  border: color.$borderCard solid 1px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.wrapperImageCard {
+  width: 100%;
+  margin-top: 25px;
+  .imageCard {
+    width: 100%;
+  }
+}
+
+.priceCard {
+  margin: 20px 0;
+  font-size: 16px;
+}

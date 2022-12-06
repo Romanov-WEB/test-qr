@@ -1,0 +1,47 @@
+@use "../../styles/variables/color";
+
+.modalWrapper {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: color.$bgModal;
+  border: color.$borderModal 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 300px);
+  left: calc(50% - 200px);
+  margin: 0 auto;
+}
+
+.contentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35%;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn, .btnError {
+  border: none;
+  font-size: 18px;
+  background-color: color.$btnSubmitBg;
+  color: color.$btnText;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnError {
+  background-color: color.$btnErrorBg;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,55 @@
+@use "../../styles/variables/color";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: color.$manuBg;
+}
+
+.wrapperLogo {
+  width: 50px;
+  img {
+    width: 50px;
+  }
+}
+
+.wrapperBtn {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: color.$btnMenuBg;
+  color: color.$textMenuBtn;
+  font-size: 24px;
+  line-height: 0;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.container {
+  background-color: color.$containerBg;
+  min-height: calc(100vh - 115px - 50px);
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: color.$footerBg;
+}
+
+.textFooter {
+  color: color.$textFooter;
+  text-align: center;
+  user-select: none;
+  font-size: 14px;
+  font-weight: bold;
+}
