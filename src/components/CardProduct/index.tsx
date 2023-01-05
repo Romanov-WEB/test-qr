@@ -18,12 +18,14 @@ export const CardProduct = observer(({id, title, imgUrl, price}: PopsCardProduct
             imgUrl,
             price: +price,
         },
+        counter: 0
     }
 
     return (
         <div className={styles.wrapperCard}
              onClick={() => {
                  store.addListOrder(order)
+                 store.addItemOrder(id)
              }
         }>
             <h2 className={styles.title}>Название товара: {title}</h2>

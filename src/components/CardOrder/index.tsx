@@ -11,16 +11,6 @@ interface CardOrder {
 }
 
 const CardOrder = observer((props: CardOrder): JSX.Element => {
-    const order: ProductOrderInstance = {
-        id: props.id,
-        product: {
-            id: props.id,
-            title: props.title,
-            imgUrl: props.imgUrl,
-            price: props.price,
-        },
-    }
-
     return (
         <div className={styles.cardOrderWrapper}>
             <div className={styles.title}>{props.title}</div>
@@ -32,16 +22,16 @@ const CardOrder = observer((props: CardOrder): JSX.Element => {
             <div className={styles.counterProductWrapper}>
                 <div className={styles.counterProduct}>
                     Количество товара:
-                    { store.listOrder.filter(item => item.id === props.id).length}
+                    { store.listOrder.filter(item => item.id === props.id)[0].counter}
                 </div>
                 <div className={styles.btnWrapper}>
                     <button className={styles.btn}
-                        onClick={() => store.addListOrder(order)}
+                        onClick={() => store.addItemOrder(props.id)}
                     >
                         +
                     </button>
                     <button className={styles.btn}
-                        onClick={() => store.deleteItemOrder(order)}
+                        onClick={() => store.deleteItemOrder(props.id)}
                     >
                         -
                     </button>

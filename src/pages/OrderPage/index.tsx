@@ -49,9 +49,7 @@ const OrderPage = observer(() => {
                                                 Цена товара: {item.product.price}
                                             </div>
                                             <div className={styles.counter}>
-                                                Количество товара: {
-                                                store.listOrder.filter(product => product.id === item.id).length
-                                            }
+                                                Количество товара: {item.counter}
                                             </div>
                                         </div>
                                         <button className={styles.btnDelete}
